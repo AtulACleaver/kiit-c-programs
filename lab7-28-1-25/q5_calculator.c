@@ -20,3 +20,15 @@ int main(){
     }
     return 0;
 }
+
+/*
+    Output:
+    Enter two integers: 5 3
+    Enter your choice:
+    1. Add
+    2. Subtract
+    3. Multiply
+    4. Divide
+    3
+    Product: 15
+*/

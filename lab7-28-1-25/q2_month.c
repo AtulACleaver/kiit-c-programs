@@ -47,3 +47,7 @@ int main(){
     }
     return 0;
 }
+
+// Output:
+// Enter a number from 0 to 12: 3
+// April

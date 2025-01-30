@@ -54,3 +54,7 @@ int main(){
 
     return 0;
 }
+
+// Output:
+// Enter the total marks secured by the student: 85
+// E grade

@@ -43,3 +43,8 @@ int main(){
     }
     return 0;
 }
+
+// Output:
+// Enter two integers: 5 3
+// Enter the operator: *
+// Product: 15

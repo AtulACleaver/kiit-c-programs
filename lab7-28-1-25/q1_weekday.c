@@ -32,3 +32,8 @@ int main(){
     }
     return 0;
 }
+
+// Output:
+// Enter a number from 0 to 6: 3
+// Wednesday
+//
