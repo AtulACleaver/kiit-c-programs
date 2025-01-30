@@ -10,42 +10,42 @@ int main(){
     {
     case 10:
     {
-        printf('O grade');
+        printf("O grade");
         break;
     }
     case 9:
     {
-        printf('O grade');
+        printf("O grade");
         break;
     }
     case 8:
     {
-        printf('E grade');
+        printf("E grade");
         break;
     }
     case 7:
     {
-        printf('A grade');
+        printf("A grade");
         break;
     }
     case 6:
     {
-        printf('B grade');
+        printf("B grade");
         break;
     }
     case 5:
     {
-        printf('C grade');
+        printf("C grade");
         break;
     }
     case 4:
     {
-        printf('D grade');
+        printf("D grade");
         break;
     }
     case 3 || 2 || 1 || 0:
     {
-        printf('F grade');
+        printf("F grade");
         break;
     }
     default:

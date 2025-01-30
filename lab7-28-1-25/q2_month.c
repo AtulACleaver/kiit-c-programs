@@ -1,9 +1,9 @@
-// WAP to input a number from [0 - 12] display month name
+// WAP to input a number from [0 - 11] display month name
 
 #include <stdio.h>
 int main(){
     int n;
-    printf("Enter a number from 0 to 12: ");
+    printf("Enter a number from 0 to 11: ");
     scanf("%d", &n);
     switch (n){
         case 0:
