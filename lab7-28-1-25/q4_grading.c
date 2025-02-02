@@ -43,7 +43,22 @@ int main(){
         printf("D grade");
         break;
     }
-    case 3 || 2 || 1 || 0:
+    case 3:
+    {
+        printf("F grade");
+        break;
+    }
+    case 2:
+    {
+        printf("F grade");
+        break;
+    }
+    case 1:
+    {
+        printf("F grade");
+        break;
+    }
+    case 0:
     {
         printf("F grade");
         break;
