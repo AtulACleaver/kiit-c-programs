@@ -1,4 +1,4 @@
-// WAP to print the series as 1 2 7 15 31 ..........n, where n is given by user.
+// WAP to print the series as 1 3 7 15 31 ..........n, where n is given by user.
 
 #include <stdio.h>
 int main(){
