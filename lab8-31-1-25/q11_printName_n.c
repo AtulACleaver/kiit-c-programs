@@ -6,7 +6,7 @@ int main(){
     printf("Value of N: ");
     scanf("%d", &n);
     while(i < n){
-        printf("Siddharth\n");
+        printf("Atul\n");
         i++;
     }
 
