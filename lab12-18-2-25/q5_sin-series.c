@@ -3,12 +3,12 @@
 #include <stdio.h>
 
 int main() {
-    int x, n;
+    double x, n;
     float sum = 0, fact = 1;
-    printf("Enter the value of x: ");
-    scanf("%d", &x);
-    printf("Enter the number of terms: ");
-    scanf("%d", &n);
+    printf("Enter the value of x: \n");
+    scanf(" %lf", &x);
+    printf("Enter the number of terms: \n");
+    scanf(" %lf", &n);
     for (int i = 1; i <= n; i++) {
         fact = 1;
         for (int j = 1; j <= 2 * i - 1; j++) {
@@ -26,3 +26,5 @@ int main() {
 }
 
 // pg 196 - 202 -> case studies ko try karna hai
+
+// 4.4 4
