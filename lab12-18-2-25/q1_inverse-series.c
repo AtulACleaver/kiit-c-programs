@@ -18,6 +18,9 @@ int main(){
     return 0;
 }
 
+// Question Series
+// Q1. Write a program to find the sum of the series 1 + 1/2 + 1/3 + 1/4 + 1/5 + ... 1/n.
+
 // Output:
 // Enter n: 5
 // Sum of series: 2.283333

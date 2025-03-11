@@ -46,3 +46,7 @@ int main(){
 
     return 0;
 }
+
+// Output:
+// Enter n: 5
+// Sum of series: 153.000000

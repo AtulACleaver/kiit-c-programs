@@ -14,18 +14,24 @@ int main() {
         for (int j = 1; j <= 2 * i - 1; j++) {
             fact *= j;
         }
-        
+
         if (i % 2 == 0) {
-            // why x * x * x?
-            // 
-            sum -= (float) (x * x * x) / fact;
+            sum -= (pow(x, 2 * i - 1) / fact);
         } else {
-            sum += (float) (x * x * x) / fact;
+            sum += (pow(x, 2 * i - 1) / fact);
         }
     }
     printf("Sum of the series is: %f\n", sum);
     return 0;
 }
+
+// Output
+// Enter the value of x:
+// 2
+// Enter the number of terms:
+// 5
+// Sum of the series is: 1.933333
+
 
 // pg 196 - 202 -> case studies ko try karna hai
 

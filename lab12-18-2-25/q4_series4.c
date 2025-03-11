@@ -21,3 +21,7 @@ int main(){
 
     return 0;
 }
+
+// Output
+// Enter n: 5
+// Sum of series: 2.716667
