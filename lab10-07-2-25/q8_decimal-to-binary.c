@@ -18,3 +18,7 @@ int main(){
     
     return 0;
 }
+
+// Output:
+// Input number to convert to binary: 10
+// Binary equivalent of 10 is 1010

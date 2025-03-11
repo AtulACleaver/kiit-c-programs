@@ -16,6 +16,8 @@ int main() {
         }
         
         if (i % 2 == 0) {
+            // why x * x * x?
+            // 
             sum -= (float) (x * x * x) / fact;
         } else {
             sum += (float) (x * x * x) / fact;
