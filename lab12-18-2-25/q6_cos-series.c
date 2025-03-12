@@ -16,11 +16,16 @@ int main(){
         }
         
         if (i % 2 == 0) {
-            sum -= (float) (x * x) / fact;
+            sum -= (float)pow(x, 2 * i) / fact;
         } else {
-            sum += (float) (x * x) / fact;
+            sum += (float)pow(x, 2 * i) / fact;
         }
     }
     printf("Sum of the series is: %f\n", sum);
     return 0;
 }
+
+// Output
+// Enter the value of x: 2
+// Enter the number of terms: 3
+// Sum of the series is: 0.666667 

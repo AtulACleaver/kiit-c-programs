@@ -10,7 +10,7 @@ int main(){
     for (int i = 0; i < 6; i++){
         for(int j = 0; j < 6-1-i; j++){
             if(arr[j] > arr[j+1]){
-                int temp = arr[j];
+                int temp = arr[j]; 
                 arr[j] = arr[j+1];
                 arr[j+1] = temp;
             }
@@ -57,3 +57,14 @@ int main(){
 
     return 0;
 }
+
+// Output
+// Size of Array: 6
+// Input 1: 72
+// Input 2: 12
+// Input 3: 31
+// Input 4: 82
+// Input 5: 1
+// Input 6: 8
+// Sorted Array:
+// 82, 72, 31, 12, 8, 1,

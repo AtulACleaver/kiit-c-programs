@@ -37,3 +37,20 @@ int main(){
     return 0;
     
 }
+
+// Output
+// Key Element: 3
+// Size of Array: 11
+// Input 0: 1
+// Input 1: 2
+// Input 2: 3
+// Input 3: 4
+// Input 4: 5
+// Input 5: 6
+// Input 6: 7
+// Input 7: 8
+// Input 8: 9
+// Input 9: 10
+// Input 10: 11
+
+// Position of key element: 2

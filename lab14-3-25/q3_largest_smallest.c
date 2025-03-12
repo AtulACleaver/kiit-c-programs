@@ -28,3 +28,13 @@ int main(){
 
     return 0;
 }
+
+// Output
+// Size of Array: 5
+// Input 0: 1
+// Input 1: 2
+// Input 2: 3
+// Input 3: 4
+// Input 4: 5
+// Largest: 5
+// Smallest: 1
