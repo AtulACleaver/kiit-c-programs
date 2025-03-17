@@ -1,49 +1,32 @@
-// plot sinx graph using patterns ****
+#include <stdio.h>
+#include <math.h>
 
-// C program to print sign wave pattern. 
-#include <stdio.h> 
+#define PI 3.14159265358979323846
 
-int main()
-{ 
-	int wave_height = 5, wave_length = 2; 
-	// inner space and outer space. 
-	int is = 1, os = 2; 
+int main() {
+    // Define the range for x: from -2π to 2π
+    double start = -2 * PI;
+    double end = 2 * PI;
+    double step = 0.1; // increment in x
 
-	// for loop for height of wave 
-	for (int i = 1; i <= wave_height; i++) { 
+    // The width of the plot (number of columns)
+    int width = 40; // Adjust this to make the plot wider or narrower
 
-		// for loop for wave length 
-		for (int j = 1; j <= wave_length; j++) { 
+    // Loop through the x values
+    for (double x = start; x <= end; x += step) {
+        // Compute sin(x)
+        double y = sin(x);
+        
+        // Scale and shift y to fit into our width
+        // cos(x) ranges from -1 to 1. We shift by +1 to range 0 to 2,
+        // then multiply by (width/2) to map it into the width.
+        int pos = (int)((y + 1)* width/2.0);
 
-			// intermediate spaces 
-			for (int k = 1; k <= os; k++) { 
-				printf(" "); 
-			} 
-
-			// put any symbol 
-			printf("0"); 
-
-			for (int k = 1; k <= is; k++) 
-				printf(" ");			 
-
-			// put any symbol 
-			printf("0"); 
-
-			for (int k = 1; k <= os; k++) 
-				printf(" "); 
-			
-			printf(" "); 
-		} 
-
-		// set a value of os to 1 if i+1 is not 
-		// equal to wave height or 0 otherwise 
-		os = (i + 1 != wave_height); 
-
-		// set value of is to 3 if i+1 is not equal 
-		// to wave height or 5 otherwise 
-		is = (i + 1 != wave_height) ? 3 : 5; 
-
-		printf("\n"); 
-	} 
-	return 0; 
+        // Print spaces until the position, then print a star
+        for (int j = 0; j < pos; j++) {
+            printf(" ");
+        }
+        printf("*\n");
+    }
+    return 0;
 }

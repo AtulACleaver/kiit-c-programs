@@ -20,7 +20,7 @@ int main() {
         // Scale and shift y to fit into our width
         // cos(x) ranges from -1 to 1. We shift by +1 to range 0 to 2,
         // then multiply by (width/2) to map it into the width.
-        int pos = (int)((y + 1) * (width / 2.0));
+        int pos = (int)((y + 1) * (width/2.0));
 
         // Print spaces until the position, then print a star
         for (int j = 0; j < pos; j++) {
