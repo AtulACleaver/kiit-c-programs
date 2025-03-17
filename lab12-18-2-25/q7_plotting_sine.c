@@ -3,8 +3,9 @@
 // C program to print sign wave pattern. 
 #include <stdio.h> 
 
-void printSinWave(int wave_height, int wave_length) 
+int main()
 { 
+	int wave_height = 5, wave_length = 2; 
 	// inner space and outer space. 
 	int is = 1, os = 2; 
 
@@ -44,12 +45,5 @@ void printSinWave(int wave_height, int wave_length)
 
 		printf("\n"); 
 	} 
-} 
-
-// Driver code 
-int main() 
-{ 
-	int wave_height = 5, wave_length = 2; 
-	printSinWave(wave_height, wave_length); 
 	return 0; 
-} 
+}
