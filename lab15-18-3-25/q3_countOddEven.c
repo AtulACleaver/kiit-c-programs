@@ -1,9 +1,5 @@
 // Find the number of even and odd elements present in m and n order
 
-// Input an array of m x n order and display the elements
-
-// WAP to intput elements in 3x3 matrix and display the matrix in tabular form.
-
 
 #include <stdio.h>
 
@@ -43,7 +39,7 @@ int main(){
     }
 
     printf("No. of Odd numbers are: %d\n No. of Even numbers are: %d", odd, even);
-    
+
     return 0;
 }
 
