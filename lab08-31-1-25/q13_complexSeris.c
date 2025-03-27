@@ -5,9 +5,17 @@ int main(){
     int i = 1, n;
     printf("Value of N: ");
     scanf("%d", &n);
-    while(i <= n){
+    // while(i <= n){
+    //     printf("%d ", i);
+    //     i = i * 2 + 1;
+    // }
+
+    int count = 0;
+
+    for(int i = 1; count < n; i++){
         printf("%d ", i);
-        i = i * 2 + 1;
+        i = i*2;
+        count++;
     }
 
     return 0;

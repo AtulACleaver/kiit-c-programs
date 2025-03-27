@@ -1,6 +1,8 @@
 // (x^1)/1! - (x^3)/3! + (x^5)/5! - (x^7)/7! + (x^9)/9! + ..... n terms
 
 #include <stdio.h>
+#include <math.h> 
+
 
 int main() {
     double x, n;
