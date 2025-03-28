@@ -1,4 +1,4 @@
-// WAP to insert an element at a given index in an array and print the original and updated array inside main
+// WAP to insert an element after a given position
 
 #include <stdio.h>
 
@@ -18,7 +18,7 @@ void insertElement(int *arr, int n, int index, int newElement)
     {
         arr[i] = arr[i - 1];
     }
-    arr[index] = newElement;
+    arr[index + 1] = newElement;
 }
 
 int main()
@@ -28,11 +28,12 @@ int main()
     printf("Original Array: ");
     printArray(arr, 5);
 
-    // why would it be 5
-    
     insertElement(arr, 5, 2, 10);
 
     printf("Updated Array: ");
     printArray(arr, 6);
     return 0;
 }
+
+// Output: Original Array: 1 2 3 4 5
+// Updated Array: 1 2 3 10 4 5
