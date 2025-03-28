@@ -19,3 +19,7 @@ int main(){
 
     return 0;
 }
+
+// Output
+// Before Swapping: p = 2, q = 3
+// After Swapping: p = 3, q = 2
