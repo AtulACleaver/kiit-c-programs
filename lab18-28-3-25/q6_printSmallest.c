@@ -23,7 +23,7 @@ int main()
 {
     int arr[] = {1, 2, 3, 4, 5};
     
-    printf("Pos: %d", sPosArr(arr, 5));
+    printf("Smallest Element: %d \n Pos: %d", arr[sPosArr(arr, 5)], sPosArr(arr, 5));
     return 0;
 }
 // Output: 1 2 3 4 5
