@@ -5,7 +5,10 @@
 
 int main(){
     char str[100];
+    printf("Enter a string: ");
+    // using scanf to read string
     // scanf("%s", str);
+    
     gets(str);
     int len = 0;
 
