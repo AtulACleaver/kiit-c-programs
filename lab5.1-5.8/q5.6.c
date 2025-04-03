@@ -25,3 +25,14 @@ int main() {
 
     return 0;
 }
+
+// Output
+// Enter the number of elements (max 100): 5
+// Enter 5 integers:
+// 1
+// 2
+// 3
+// 4
+// 5
+// Array elements in reverse order:
+// 5 4 3 2 1

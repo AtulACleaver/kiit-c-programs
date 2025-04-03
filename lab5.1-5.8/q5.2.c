@@ -2,6 +2,8 @@
 
 #include <stdio.h>
 
+
+
 int main() {
     int arr[100]; // Declare an array of size 100
     int i, count = 0;
@@ -28,3 +30,19 @@ int main() {
 
     return 0;
 }
+
+// Output
+// Enter the number of elements (max 100): 10
+// Enter 10 integers:
+// 123
+// 456
+// 789
+// 101
+// 234
+// 567
+// 890
+// 345
+// 678
+// 901
+// Three-digit even integers:
+// 456 234 678

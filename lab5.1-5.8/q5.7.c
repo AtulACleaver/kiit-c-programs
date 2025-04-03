@@ -34,3 +34,18 @@ int main() {
 
     return 0;
 }
+
+
+/* 
+Output (example):
+Enter the number of rows: 2
+Enter the number of columns: 3
+Enter the elements of the matrix:
+1
+2
+3
+4
+5
+6
+The sum of all elements in the matrix is: 21        
+*/

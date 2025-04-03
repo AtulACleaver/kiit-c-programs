@@ -47,3 +47,28 @@ int main(){
     return 0;
 }
 
+
+// /*
+// Output (example):
+// Print no. of rows & columns: 3
+// Enter the elements of the matrix:
+// Enter element at [0][0]: 1
+// Enter element at [0][1]: 2
+// Enter element at [0][2]: 3
+// Enter element at [1][0]: 4
+// Enter element at [1][1]: 5
+// Enter element at [1][2]: 6               
+// Enter element at [2][0]: 7
+// Enter element at [2][1]: 8
+// Enter element at [2][2]: 9
+//
+// Original Matrix:
+// 1	2	3
+// 4	5	6
+// 7	8	9   
+
+// Transpose Matrix:
+// 1	4	7
+// 2	5	8
+// 3	6	9
+// */

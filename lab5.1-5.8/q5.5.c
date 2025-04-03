@@ -51,3 +51,14 @@ int main() {
 
     return 0;
 }
+
+// Output
+// Enter the number of elements: 5
+// Enter 5 integers:
+// 1
+// 2
+// 3
+// 4
+// 5
+// Array after arranging odd and even numbers:
+// 1 3 5 2 4

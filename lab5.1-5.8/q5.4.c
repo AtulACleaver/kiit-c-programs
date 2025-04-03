@@ -39,3 +39,14 @@ int main() {
 
     return 0;
 }
+
+// Output
+// Enter the number of elements: 5
+// Enter 5 integers:
+// 1
+// 2
+// 3
+// 4
+// 5
+// Array after swapping pairs:
+// 2 1 4 3 5

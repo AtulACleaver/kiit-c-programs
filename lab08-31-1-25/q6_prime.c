@@ -12,7 +12,7 @@ int main(){
             prime = 0;
             break;
         }
-    }
+    }   
     if (prime == 1)
     {
         printf("%d is a prime number\n", n);

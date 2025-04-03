@@ -21,3 +21,19 @@ int main() {
 
     return 0;
 }
+
+
+// Output
+// Enter 10 integers:
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
+// 10
+// The elements in the array are:
+// 1 2 3 4 5 6 7 8 9 10
