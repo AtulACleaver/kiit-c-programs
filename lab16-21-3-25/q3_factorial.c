@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-int factorial(int a);
+int factorial(int);
 
 int main(){
     int a;
