@@ -15,18 +15,9 @@ int main(){
     return 0;
 }
 
-int gcd(int a, int b){
-    // Logic
-    // gcd(12, 15) = gcd(15, 12 % 15)
-    // gcd(15, 12 % 15) = gcd(15, 12)
-    // gcd(15, 12) = gcd(12, 15 % 12)
-    // gcd(12, 15 % 12) = gcd(12, 3)
-    // gcd(12, 3) = gcd(3, 12 % 3)
-    // gcd(3, 12 % 3) = gcd(3, 0)
-    // gcd(3, 0) = 3
-    
-    if(b != 0)
-        return gcd(b, a % b);
-    else
+int  gcd(int a, int b){
+    if(b == 0)
         return a;
+    else
+        return gcd(b, a % b);
 }

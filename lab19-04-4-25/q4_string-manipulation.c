@@ -11,7 +11,5 @@ int stlen(char *);
 int main(){
     char str1[8] = "twitter";
     char str2[4] = ".com";
-
-
 }
 
