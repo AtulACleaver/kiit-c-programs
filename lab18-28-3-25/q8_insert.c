@@ -14,7 +14,7 @@ void printArray(int *arr, int n)
 
 void insertElement(int *arr, int n, int index, int newElement)
 {
-    for (int i = n; i > index; i--)
+    for (int i = n; i >= index; i--)
     {
         arr[i] = arr[i - 1];
     }
