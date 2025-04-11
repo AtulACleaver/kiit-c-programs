@@ -35,4 +35,4 @@ void multiplyArr(int arr[][3], int rows){
         }
         printf("\n");
     }
-}
+} 
