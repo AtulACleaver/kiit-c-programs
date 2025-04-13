@@ -25,7 +25,7 @@ int comp(char str1[], char str2[]){
 
 void reverse(char str[]){
     int start = 0;
-    int end = strLength(str);
+    int end = strLength(str)-1;
 
     while(start < end){
         char temp = str[start];
