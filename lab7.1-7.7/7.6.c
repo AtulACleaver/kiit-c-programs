@@ -5,7 +5,7 @@
 
 int main() {
     char str[100];
-    char ch, prev_ch;
+    char ch;
     int i;
 
     printf("Enter a string: ");

@@ -21,3 +21,11 @@ int main(){
     printf("HCF of %d and %d is %d\n", a, b, hcf);
     return 0;
 }
+
+int gcd (a, b){
+    if(b == 0){
+        return a;
+    }else{
+        return gcd(b, a%b);
+    }
+}

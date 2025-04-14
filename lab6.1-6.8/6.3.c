@@ -26,3 +26,5 @@ void isPalindrome(int num){
         printf("it is not palindrome");
     }
 }
+
+// Output

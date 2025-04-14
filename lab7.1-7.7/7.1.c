@@ -10,7 +10,7 @@ int string_length(char str[]) {
     return length;
 }
 
-int main() {
+int main() { 
     char str[100];
     
     printf("Enter a string: ");
@@ -21,3 +21,7 @@ int main() {
     
     return 0;
 }
+
+// Output:
+// Enter a string: hello
+// Last character: o

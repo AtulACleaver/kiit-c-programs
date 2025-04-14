@@ -3,30 +3,31 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int vowel_count(char *[], int);
+
+int main(){
     char str[100];
-    int i, vowels = 0, consonants = 0;
-    char *vowel_chars = "aeiouAEIOU";
+    int i, v_count, c_count;
 
     printf("Enter a string: ");
-    fgets(str, sizeof(str), stdin);
-    str[strcspn(str, "\n")] = 0; // Remove newline character
+    scanf("%s", str);
 
-    for (i = 0; str[i] != '\0'; i++) {
-        if (strchr(vowel_chars, str[i])) {
-            vowels++;
-        } else if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z')) {
-            consonants++;
-        }
-    }
+    v_count = vowel_count(&str, strlen(str));
+    c_count = strlen(str) - v_count;
 
-    printf("Number of vowels: %d\n", vowels);
-    printf("Number of consonants: %d\n", consonants);
+    printf("Number of vowels: %d\n", v_count);
+    printf("Number of consonants: %d\n", c_count);
 
     return 0;
 }
 
-// Output:
-// Enter a string: Hello World
-// Number of vowels: 3
-// Number of consonants: 7
+int vowel_count(char *str[], int length){
+    int i, count = 0;
+    char vowels[] = "aeiouAEIOU";
+
+    for(i = 0; i < length; i++){
+        if(strchr(vowels, str[i]) != NULL){
+            count++;
+        }
+    }
+    return count;
