@@ -4,87 +4,52 @@ array of structure. If full mark of each subject is considered as 100 and pass m
 display the list of students failed in a particular subject. */
 
 #include <stdio.h>
-#include <string.h>
-
 #define SUBJECTS 5
 #define PASS_MARK 40
 
-// Structure to store student information
 struct Student {
-    int rollNo;
-    char name[50];
-    char gender[10];
-    int marks[SUBJECTS];
-    int totalMarks;
+    int rollNo, marks[SUBJECTS], totalMarks;
+    char name[50], gender[10];
 };
 
-// Function to calculate total marks of a student
 void calculateTotalMarks(struct Student *s) {
     s->totalMarks = 0;
-    for (int i = 0; i < SUBJECTS; i++) {
-        s->totalMarks += s->marks[i];
-    }
+    for (int i = 0; i < SUBJECTS; i++) s->totalMarks += s->marks[i];
 }
 
-// Function to display student information
-void displayStudentInfo(struct Student s) {
-    printf("\nRoll No: %d\n", s.rollNo);
-    printf("Name: %s\n", s.name);
-    printf("Gender: %s\n", s.gender);
-    printf("Marks: ");
-    for (int i = 0; i < SUBJECTS; i++) {
-        printf("%d ", s.marks[i]);
-    }
-    printf("\nTotal Marks: %d\n", s.totalMarks);
-}
-
-// Function to display students who failed in any subject
 void displayFailedStudents(struct Student students[], int n) {
-    printf("\nList of students who failed in any subject:\n");
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < SUBJECTS; j++) {
+    printf("\nStudents who failed:\n");
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < SUBJECTS; j++)
             if (students[i].marks[j] < PASS_MARK) {
                 printf("Roll No: %d, Name: %s, Subject %d Marks: %d\n",
                        students[i].rollNo, students[i].name, j + 1, students[i].marks[j]);
                 break;
             }
-        }
-    }
 }
 
 int main() {
     int n;
-
-    printf("Enter the number of students: ");
+    printf("Enter number of students: ");
     scanf("%d", &n);
-
     struct Student students[n];
 
-    // Input student information
     for (int i = 0; i < n; i++) {
         printf("\nEnter details for Student %d:\n", i + 1);
-        printf("Roll No: ");
-        scanf("%d", &students[i].rollNo);
-        printf("Name: ");
-        scanf(" %[^\n]", students[i].name); // To read a string with spaces
-        printf("Gender: ");
-        scanf("%s", students[i].gender);
-        printf("Enter marks for %d subjects: ", SUBJECTS);
-        for (int j = 0; j < SUBJECTS; j++) {
-            scanf("%d", &students[i].marks[j]);
-        }
+        printf("Roll No: "); scanf("%d", &students[i].rollNo);
+        printf("Name: "); scanf(" %[^\n]", students[i].name);
+        printf("Gender: "); scanf("%s", students[i].gender);
+        printf("Marks: ");
+        for (int j = 0; j < SUBJECTS; j++) scanf("%d", &students[i].marks[j]);
         calculateTotalMarks(&students[i]);
     }
 
-    // Display all student information
     printf("\nStudent Information:\n");
-    for (int i = 0; i < n; i++) {
-        displayStudentInfo(students[i]);
-    }
+    for (int i = 0; i < n; i++)
+        printf("\nRoll No: %d, Name: %s, Gender: %s, Total Marks: %d\n",
+               students[i].rollNo, students[i].name, students[i].gender, students[i].totalMarks);
 
-    // Display students who failed in any subject
     displayFailedStudents(students, n);
-
     return 0;
 }
 
