@@ -13,19 +13,12 @@ union ABC {
 
 int main() {
     union ABC u;
+    
+    printf("Enter a character: "); scanf("%s", u.a); printf("Character: %s\n", u.a);
+    printf("Enter an integer: "); scanf("%d", &u.b); printf("Integer: %d\n", u.b);
+    printf("Enter a double: "); scanf("%lf", &u.c); printf("Double: %.2f\n", u.c);
 
-    printf("Enter a character: ");
-    scanf("%s", u.a);
-    printf("Character: %s\n", u.a);
-
-    printf("Enter an integer: ");
-    scanf("%d", &u.b);
-    printf("Integer: %d\n", u.b);
-
-    printf("Enter a double: ");
-    scanf("%lf", &u.c);
-    printf("Double: %.2f\n", u.c);
-
+    printf("\nFinal values:\nCharacter: %s\nInteger: %d\nDouble: %.2f\n", u.a, u.b, u.c);
     return 0;
 }
 
